@@ -3,19 +3,32 @@ library mymo;
 import 'dart:async';
 import 'dart:convert';
 import 'dart:io';
-import 'package:flutter/widgets.dart';
 
+import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:http/http.dart';
+
+import 'package:flutter/gestures.dart';
+import 'package:flutter/foundation.dart';
+
+import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
+import 'dart:math' as math;
+import 'package:flutter/material.dart'
+    hide RefreshIndicator, RefreshIndicatorState;
+
 
 part 'api/my_exception.dart';
 part 'api/my_api.dart';
 part 'handle/my_handle.dart';
 part 'helper/my_compare.dart';
-part 'controller/my_controller.dart';
-part 'controller/my_dependency.dart';
-part 'controller/my_stream.dart';
-part 'controller/my_lifecycle.dart';
-part 'controller/my_view.dart';
+part 'pagination/my_refresh.dart';
+part 'pagination/my_slivers_refresh.dart';
+part 'pagination/my_indicator.dart';
+part 'pagination/my_refresh_physics.dart';
+part 'pagination/my_footer.dart';
+part 'pagination/my_footer_title.dart';
+
 
 class MyMo {
   const MyMo();

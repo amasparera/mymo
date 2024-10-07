@@ -1,7 +1,7 @@
 part of '../mymo.dart';
 
 // Either Class
-class MyHandle<L, R> {
+class MyHandle<L, R>  extends MyCompare{
   final L? _left;
   final R? _right;
 
@@ -51,4 +51,7 @@ class MyHandle<L, R> {
       return onRight(valueRight);
     }
   }
+  
+  @override
+  List<Object?> get props => [_right,_left];
 }
