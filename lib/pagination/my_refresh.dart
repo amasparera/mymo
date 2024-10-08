@@ -161,7 +161,7 @@ class MyRefresher extends StatefulWidget {
   final OnTwoLevel? onTwoLevel;
 
   /// Controll inner state
-  final RefreshController controller;
+  final MyRefreshController controller;
 
   /// child content builder
   final RefresherBuilder? builder;
@@ -548,7 +548,7 @@ class MyRefresherState extends State<MyRefresher> {
 /// See also:
 ///
 /// * [MyRefresher],a widget help you attach refresh and load more function easily
-class RefreshController {
+class MyRefreshController {
   MyRefresherState? _refresherState;
 
   /// header status mode controll
@@ -583,7 +583,7 @@ class RefreshController {
   /// initialRefreshStatus: headerMode default value
   ///
   /// initialLoadStatus: footerMode default value
-  RefreshController(
+  MyRefreshController(
       {this.initialRefresh = false,
       RefreshStatus? initialRefreshStatus,
       LoadStatus? initialLoadStatus}) {

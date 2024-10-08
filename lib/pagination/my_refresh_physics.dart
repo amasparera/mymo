@@ -22,7 +22,7 @@ class MyRefreshPhysics extends ScrollPhysics {
   final SpringDescription? springDescription;
   final double? dragSpeedRatio;
   final bool? enableScrollWhenTwoLevel, enableScrollWhenRefreshCompleted;
-  final RefreshController? controller;
+  final MyRefreshController? controller;
   final int? updateFlag;
 
   /// find out the viewport when bouncing,for compute the layoutExtent in header and footer
